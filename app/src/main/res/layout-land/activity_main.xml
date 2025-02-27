@@ -23,10 +23,10 @@
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="44dp"
+            android:layout_marginTop="24dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            app:layout_constraintStart_toEndOf="@+id/profile_photo"
             app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="260dp"
             tools:text="Name" />
 
         <TextView
@@ -34,18 +34,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
-            android:text="Department"
+            android:text="@string/profile_department"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            app:layout_constraintTop_toBottomOf="@+id/extension"
-            tools:layout_editor_absoluteX="259dp" />
+            app:layout_constraintStart_toStartOf="@+id/extension"
+            app:layout_constraintTop_toBottomOf="@+id/extension" />
 
         <TextView
             android:id="@+id/email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintStart_toStartOf="@+id/emailLabel"
             app:layout_constraintTop_toBottomOf="@+id/emailLabel"
-            tools:layout_editor_absoluteX="259dp"
             tools:text="Email Address" />
 
         <TextView
@@ -64,8 +64,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_constraintStart_toStartOf="@+id/extensionLabel"
             app:layout_constraintTop_toBottomOf="@+id/extensionLabel"
-            tools:layout_editor_absoluteX="259dp"
             tools:text="Extension" />
 
         <TextView
@@ -73,17 +73,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
-            android:text="Extension"
+            android:text="@string/profile_extension"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            app:layout_constraintTop_toBottomOf="@+id/email"
-            tools:layout_editor_absoluteX="259dp" />
+            app:layout_constraintStart_toStartOf="@+id/email"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
 
         <TextView
             android:id="@+id/emailLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
-            android:text="Email"
+            android:text="@string/profile_email"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             app:layout_constraintStart_toStartOf="@+id/name"
             app:layout_constraintTop_toBottomOf="@+id/name" />
@@ -93,7 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
-            android:text="Supervisor"
+            android:text="@string/profile_supervisor"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/profile_photo" />
@@ -112,7 +112,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
-            android:text="Direct Reports"
+            android:text="@string/profile_direct_reports"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FancyScreen</string>
+    <string name="profile_email">E-mail</string>
+    <string name="profile_extension">Extension</string>
+    <string name="profile_department">Département</string>
+    <string name="profile_supervisor">Superviseur</string>
+    <string name="profile_direct_reports">Rapports directs</string>
+</resources>
